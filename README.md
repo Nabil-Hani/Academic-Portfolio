@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Web_Development-HTML_CSS_JS-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Web Dev Badge">
 </p>
 
-Welcome! I am an Engineering Student specializing in **Core Computing (C/C++)** and **Data Analysis** at Polytech Lille (Class of 2026). This portfolio showcases my hands-on application of complex algorithms, efficient data structures, and fundamental software engineering principles.
+Welcome! I am an Engineering Student specializing in **Core Computing (C/C++)** and **Data Analysis** at Polytech Lille (Class of 2027). This portfolio showcases my hands-on application of complex algorithms, efficient data structures, and fundamental software engineering principles.
 
 My focus is on robust, system-level programming and leveraging data fundamentals to solve challenging problems.
 
