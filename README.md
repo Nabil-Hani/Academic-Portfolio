@@ -38,13 +38,13 @@ This curated selection of projects highlights my ability to transition from theo
 
 ## 📜 Project Deep Dive: Dinic Algorithm Implementation
 
-[cite_start]This was a major project combining structures and algorithms, resulting in a robust implementation with a final grade of **16/20**[cite: 726].
+This was a major project combining structures and algorithms, resulting in a robust implementation with a final grade of **16/20**.
 
 ### 🎯 Goal
-[cite_start]To study, analyze, and implement the high-performance **DINIC Algorithm** in **C** for calculating the maximum flow in a network[cite: 60, 680].
+To study, analyze, and implement the high-performance **DINIC Algorithm** in **C** for calculating the maximum flow in a network.
 
 ### 💡 Core Design Choices
-[cite_start]The project required a detailed analysis of data structures [cite: 210, 684][cite_start], leading to the final choice: a **Linked List of Successors** with **Pointers to Reverse Arcs**[cite: 302].
+The project required a detailed analysis of data structures [cite: 210, 684][cite_start], leading to the final choice: a **Linked List of Successors** with **Pointers to Reverse Arcs**.
 
 | Structure Chosen | Justification | Complexity |
 | :--- | :--- | :--- |
