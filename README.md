@@ -48,8 +48,8 @@ The project required a detailed analysis of data structures [cite: 210, 684][cit
 
 | Structure Chosen | Justification | Complexity |
 | :--- | :--- | :--- |
-| **Linked List of Successors** | [cite_start]Optimal memory usage [cite: 303] (proportional to arcs) [cite_start][cite: 243][cite_start], fast access to successors ($O(d^+(s))$) [cite: 258][cite_start], and excellent flexibility for dynamic addition/deletion of arcs[cite: 284]. | [cite_start]$O(n+m)$ (Memory) [cite: 227] |
-| **Pointers to Inverse Arcs** | [cite_start]Essential for modeling the **residual graph** (graphe d'écart)[cite: 295, 298]. [cite_start]This allows for fast, $O(1)$ update of capacities and flow reversals without searching the successor list[cite: 296, 299]. | [cite_start]$O(1)$ (Flow Update) [cite: 299] |
+| **Linked List of Successors** | [cite_start]Optimal memory usage (proportional to arcs) , fast access to successors (O(d^+(s))), and excellent flexibility for dynamic addition/deletion of arcs. | O(n+m) (Memory) |
+| **Pointers to Inverse Arcs** | Essential for modeling the **residual graph** (graphe d'écart). This allows for fast, O(1) update of capacities and flow reversals without searching the successor list. | O(1) (Flow Update) |
 
 ### 📈 Results & Validation
 The program successfully calculated the maximum flow on complex test cases:
