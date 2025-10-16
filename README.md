@@ -54,9 +54,9 @@ The project required a detailed analysis of data structures [cite: 210, 684][cit
 ### 📈 Results & Validation
 The program successfully calculated the maximum flow on complex test cases:
 
-* [cite_start]**Réseau R1 (`net1.txt`):** Flot maximal **40** (Manual verification successful)[cite: 605, 616].
-* [cite_start]**Réseau R2 (`net2.txt`):** Flot maximal **15** (Manual verification successful)[cite: 623, 637].
-* [cite_start]**Large-Scale Test (`G_2500_7500.max`):** Successfully managed a graph with **2500 vertices and 7500 arcs**, confirming robustness and controlled memory consumption[cite: 655, 656, 661, 662].
+* **Réseau R1 (`net1.txt`):** Flot maximal **40** (Manual verification successful).
+* **Réseau R2 (`net2.txt`):** Flot maximal **15** (Manual verification successful).
+* **Large-Scale Test (`G_2500_7500.max`):** Successfully managed a graph with **2500 vertices and 7500 arcs**, confirming robustness and controlled memory consumption.
 
 ---
 
@@ -80,7 +80,7 @@ To develop a fully functional, browser-based version of the "Flood It" puzzle ga
 
 Currently actively seeking a **10-week minimum internship** in France (Lille preferred) or abroad between **April and August 2026**. I am eager to apply my skills in core development and technical analysis to a challenging industry role.
 
-* 🔗 **[Your LinkedIn Profile]([Your URL])**
+* 🔗 **www.linkedin.com/in/hani-nabil**
 * 📧 **nabil.hani@polytech-lille.net** | **nabil04hani@gmail.com**
 * 🏆 **Certifications:** C2 English Proficiency (CPE) and TOEIC (Score: 985/990).
 
@@ -91,11 +91,3 @@ Currently actively seeking a **10-week minimum internship** in France (Lille pre
 All code and documentation in this academic portfolio are licensed under the **MIT License**.
 
 ***
-
-### Why the original copy/paste didn't work and what to check next:
-
-1.  **Invisible Characters/Spacing:** Markdown is sensitive to blank lines and trailing spaces, especially in tables. Copying and pasting can sometimes introduce these errors. The revised code above is cleaned up.
-2.  **HTML in Markdown:** While GitHub supports some inline HTML (`<p align="center">`), sometimes mixing it with Markdown can cause rendering breaks. I kept the HTML for centering as it's the most common way to center badges.
-3.  **Badge Syntax:** I replaced the `style=flat-square` with `style=for-the-badge` (or similar standard syntax) to ensure the images render correctly.
-
-**Action:** Go into your GitHub repository's `README.md` file, delete all the old content, and paste the cleaned-up Markdown block above. **Commit the changes**, and it should render correctly on your profile page!
