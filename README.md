@@ -1,19 +1,29 @@
 # 🎓 Nabil Hani – Engineering Academic Portfolio (Polytech Lille 2024‑2027)
 
-Welcome to my consolidated portfolio. It gathers the course projects, personal exercises and reports I produced while studying computer engineering at **Polytech Lille**. Every folder in this repository contains a self‑contained project, from low‑level algorithmics in C to interactive web and Java applications.
+This repository collects my academic deliverables from the Polytech Lille computer engineering curriculum. Each folder is a self-contained project with its own source files, datasets, and (when relevant) compiled artefacts or reports. The sections below document every project in detail so you can understand what each directory contains, how the code is structured, and how to run it.
 
 ---
 
-## 🚀 At a Glance
-
-| Domain | Technologies | Highlights |
-| :--- | :--- | :--- |
-| **Algorithms & Systems** | C, custom data structures, Unix tooling, Makefiles | Maximum flow solver with Dinic's algorithm, command line utilities for board games. |
-| **Object Oriented Programming** | Java, Swing | Complete Minesweeper engine + GUI, exception‑driven gameplay flow. |
-| **Web Engineering** | HTML5, CSS3, JavaScript, Bootstrap | Responsive résumé site, interactive data exploration dashboard. |
-| **Data & BI** | SQL concepts, KPI design, data storytelling | Static prototype of BI dashboards built from INSEE open data. |
+## 📚 Table of Contents
+1. [Algorithms & Systems Projects](#algorithms--systems-projects)
+   * [Dinic Maximum Flow Solver (`Projet_SD_Graphes/`)](#dinic-maximum-flow-solver-projet_sd_graphes)
+   * [Penté Strategy Game Toolkit (`Penté/`)](#pente-strategy-game-toolkit-penté)
+2. [Object-Oriented Games in Java](#object-oriented-games-in-java)
+   * [Complete Minesweeper Engine & GUI (`Demineur/`)](#complete-minesweeper-engine--gui-demineur)
+   * [Packaged Minesweeper Build (`Demineur_2/`)](#packaged-minesweeper-build-demineur_2)
+3. [Web Engineering Projects](#web-engineering-projects)
+   * [Interactive CV Website (`CV_Website/`)](#interactive-cv-website-cv_website)
+   * [BI/Data Dashboard Prototype (`Projet_Data/`)](#bidata-dashboard-prototype-projet_data)
+4. [Contact & License](#contact--license)
 
 ---
+
+## Algorithms & Systems Projects
+
+### Dinic Maximum Flow Solver (`Projet_SD_Graphes/`)
+**Languages & tooling:** ISO C99, custom data structures, `gcc`, `Makefile`, DIMACS network format
+
+**Purpose.** Implements a full maximum-flow solver inspired by Dinic's algorithm. The code reads directed networks in DIMACS format, builds an adjacency-list representation with reverse-arc pointers, repeatedly searches for shortest augmenting paths in the residual graph, and writes the resulting flow to disk.
 
 ## 📂 Repository Map
 
@@ -99,7 +109,7 @@ java gui.DemineurUI
 - Pages (`index.html`, `analyse.html`, `indicateurs.html`) are styled by `style.css` and enhanced with `script.js` and `js-fluid-meter.js`.
 - CSV datasets in the folder supply real figures to drive visualisations.
 
----
+**Running the dashboard.** Serve the directory via a static HTTP server (or open the HTML files directly with a browser allowing local script access). Use the file pickers to load both CSV files and reveal the generated charts and KPI gauges.
 
 ## 📬 Contact & Licensing
 
