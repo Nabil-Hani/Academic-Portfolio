@@ -37,6 +37,7 @@ Every directory is a self-contained deliverable that mixes coursework requiremen
 - [📬 Contact & License](#-contact--license)
 
 ---
+## 🧠 Algorithms & Systems Projects
 
 ## ✨ Portfolio Snapshot
 
@@ -49,7 +50,17 @@ Every directory is a self-contained deliverable that mixes coursework requiremen
 
 > **Tip:** Each project folder contains its own assets (source files, datasets, PDFs). Browse them directly if you want a deeper dive into the implementation.
 
----
+**Architecture layers**
+- **Parsing & graph construction** — `Projet.c`, `graphe.h`, `sommet.h`, `arc.h`  
+  `buildGraph` consumes DIMACS streams, instantiates vertices, and injects arcs via `ajouterArc`. Each `Arc` tracks capacity, flow, successor, and the reverse pointer.
+- **Residual network builder** — `buildRG`  
+  Clones the base graph into a residual representation with paired forward/backward arcs and **O(1) updates** through `reverse` links.
+- **Augmenting path search** — `chemin.h`, `shortestPath`  
+  BFS produces level graphs and returns a `Chemin` structure listing predecessors so augmentation can replay the route.
+- **Flow augmentation** — `minCapa`, `updateFlowInRG`, `updateFlowInNet`  
+  Computes the bottleneck (`minCapa`), adjusts residual capacities, then syncs flows back to the master graph.
+- **Reporting** — `afficherFlots`, `ecrireResultatDansFichier`  
+  Prints saturated arcs and writes a summary file with the max-flow value and per-arc distribution.
 
 ## 🧠 Algorithms & Systems Projects
 
@@ -83,7 +94,7 @@ The solver streams DIMACS input from `stdin`, writes a detailed flow report to t
 - Reverse-arc pointers kept augmentations fast, yielding strong performance even on large stress tests.
 - Project grade: **16/20**, validated against both hand-checked and large synthetic networks.
 
----
+Utilities to validate sequences and count forced captures.
 
 ### Penté Strategy Game Toolkit (`Penté/`)
 **Tech stack:** ANSI C, 19×19 boards, console interaction, PDF documentation
@@ -148,7 +159,7 @@ The Swing window adapts to any board size you configure and keeps timers and bom
 - Clear separation of concerns makes it easy to test engine logic headlessly.
 - Ready for enhancements such as high-score tracking or theme switching.
 
----
+Controller: Mouse events, flagging/chording, game state transitions.
 
 ### Packaged Minesweeper Build (`Demineur_2/`)
 **Tech stack:** Java 17+, identical source tree with bundled `.class` artefacts
@@ -207,7 +218,7 @@ python3 -m http.server 8000   # or any static server
 ```
 Upload `carreaux_nivNaturel_met.csv` and `carreaux_nivNaturel_reun.csv` when prompted to animate charts, KPI cards, and commentary based on the loaded figures.
 
----
+Bash
 
 ### Flood It Web Game (`Web-Dev-Flood-It/`)
 **Stack:** HTML5, CSS3, vanilla JavaScript
@@ -222,7 +233,45 @@ Upload `carreaux_nivNaturel_met.csv` and `carreaux_nivNaturel_reun.csv` when pro
 **Preview**
 Open `Web-Dev-Flood-It/index.html` directly in a browser, or serve the directory via a static server for local development.
 
----
+Chart.js widgets for skill visualisation.
+
+Mobile-first layout with smooth scrolling.
+
+Preview locally
+
+Bash
+
+cd CV_Website
+# open index.html in your browser (no server required)
+BI/Data Dashboard Prototype (Projet_Data/)
+Data exploration dashboards (Plotly/JS) driven by CSV/JSON data.
+
+Features
+
+KPIs and cards, trend charts, and categorical breakdowns.
+
+Simple data cleaning & aggregation scripts.
+
+Fluid-meter/indicator visuals for at-a-glance status.
+
+Run
+
+Bash
+
+cd Projet_Data
+# open index.html (uses client-side Plotly)
+Flood It Web Game (Web-Dev-Flood-It/)
+A front-end implementation of the classic puzzle game, Flood It, using core web technologies.
+
+Highlights
+
+Recursive Flood Fill: Used a recursive function (remplir) to implement the core game mechanic of propagating the selected color to adjacent cells of the same color.
+
+DOM Manipulation: Dynamic generation of the game grid and color palette based on user configuration inputs.
+
+Game Modes: Includes a Challenge Mode with move limits.
+
+Preview locally
 
 ## 📬 Contact & License
 
