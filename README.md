@@ -1,93 +1,109 @@
-# 🎓 Nabil Hani: Engineering Academic Portfolio (Polytech Lille 2024-2025)
+# 🎓 Nabil Hani – Engineering Academic Portfolio (Polytech Lille 2024‑2027)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Polytech_Lille-IS3-blue?style=for-the-badge" alt="Polytech Lille Badge">
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C Badge">
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL Badge">
-  <img src="https://img.shields.io/badge/Web_Development-HTML_CSS_JS-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Web Dev Badge">
-</p>
-
-Welcome! I am an Engineering Student specializing in **Core Computing (C/C++)** and **Data Analysis** at Polytech Lille (Class of 2027). This portfolio showcases my hands-on application of complex algorithms, efficient data structures, and fundamental software engineering principles.
-
-My focus is on robust, system-level programming and leveraging data fundamentals to solve challenging problems.
+Welcome to my consolidated portfolio. It gathers the course projects, personal exercises and reports I produced while studying computer engineering at **Polytech Lille**. Every folder in this repository contains a self‑contained project, from low‑level algorithmics in C to interactive web and Java applications.
 
 ---
 
-## 🛠️ Core Technical Expertise
+## 🚀 At a Glance
 
-| Domain | Key Technologies & Concepts |
-| :--- | :--- |
-| **Low-Level & Algorithms** | **C** (Mastery), Data Structures (Lists, Queues), **Dynamic Memory Allocation** (`malloc`/`free`), Unix System Calls, `Makefiles`. |
-| **Databases & BI** | **SQL** (Queries & Schema Design), Data Aggregation, KPI Logic, Conceptual experience with Qlik Sense. |
-| **Web Development** | **HTML5**, **CSS3**, **JavaScript (DOM Manipulation)**, Responsive Design (Bootstrap). |
-| **Core Engineering** | **C++**, **Java** (OOP Fundamentals), Algorithmic Complexity ($O(n+m)$ analysis), Problem Solving. |
-
----
-
-## 🚀 Featured Academic Projects
-
-This curated selection of projects highlights my ability to transition from theoretical analysis to rigorous, working code. All source code and detailed reports are available in the corresponding folders within this repository.
-
-| Project Title | Core Technology | Key Skills Demonstrated | Link to Project |
-| :--- | :--- | :--- | :--- |
-| **Dinic Algorithm for Max Flow** | **C**, Graphes & Combinatoires | Advanced Algorithm Implementation, Custom Linked List Structures, Time/Space Complexity Analysis, Graph Residual Modeling. | [View Project Folder](Graphes-Combinatoires-DINIC/) |
-| **'Flood It' Web Game** | **HTML, CSS, JavaScript** | Front-end Game Logic, DOM Manipulation, Recursive Flood Fill Algorithm, Responsive UI Design (Bootstrap). | [View Project Folder](Web-Dev-Flood-It/) |
-| **Business Intelligence Intern** | BI/Data Aggregation, SQL | KPI Development, Data Visualization (Qlik Sense), Teamwork, Adaptability. | *(Experience Only - See LinkedIn)* |
-
----
-
-## 📜 Project Deep Dive: Dinic Algorithm Implementation
-
-This was a major project combining structures and algorithms, resulting in a robust implementation with a final grade of **16/20**.
-
-### 🎯 Goal
-To study, analyze, and implement the high-performance **DINIC Algorithm** in **C** for calculating the maximum flow in a network.
-
-### 💡 Core Design Choices
-The project required a detailed analysis of data structures [cite: 210, 684][cite_start], leading to the final choice: a **Linked List of Successors** with **Pointers to Reverse Arcs**.
-
-| Structure Chosen | Justification | Complexity |
+| Domain | Technologies | Highlights |
 | :--- | :--- | :--- |
-| **Linked List of Successors** | [cite_start]Optimal memory usage (proportional to arcs) , fast access to successors (O(d^+(s))), and excellent flexibility for dynamic addition/deletion of arcs. | O(n+m) (Memory) |
-| **Pointers to Inverse Arcs** | Essential for modeling the **residual graph** (graphe d'écart). This allows for fast, O(1) update of capacities and flow reversals without searching the successor list. | O(1) (Flow Update) |
-
-### 📈 Results & Validation
-The program successfully calculated the maximum flow on complex test cases:
-
-* **Réseau R1 (`net1.txt`):** Flot maximal **40** (Manual verification successful).
-* **Réseau R2 (`net2.txt`):** Flot maximal **15** (Manual verification successful).
-* **Large-Scale Test (`G_2500_7500.max`):** Successfully managed a graph with **2500 vertices and 7500 arcs**, confirming robustness and controlled memory consumption.
+| **Algorithms & Systems** | C, custom data structures, Unix tooling, Makefiles | Maximum flow solver with Dinic's algorithm, command line utilities for board games. |
+| **Object Oriented Programming** | Java, Swing | Complete Minesweeper engine + GUI, exception‑driven gameplay flow. |
+| **Web Engineering** | HTML5, CSS3, JavaScript, Bootstrap | Responsive résumé site, interactive data exploration dashboard. |
+| **Data & BI** | SQL concepts, KPI design, data storytelling | Static prototype of BI dashboards built from INSEE open data. |
 
 ---
 
-## 💻 Project Deep Dive: Flood It Game (Web Development)
+## 📂 Repository Map
 
-This project focused on implementing game logic and front-end interaction using web technologies.
+- [`Projet_SD_Graphes/`](Projet_SD_Graphes/) – C implementation of Dinic's maximum flow algorithm with reusable graph primitives.
+- [`Penté/`](Penté/) – C tools and datasets for analysing and playing the Penté (five‑in‑a‑row) strategy game.
+- [`Demineur/`](Demineur/) – Java Minesweeper project structured around clean separation between model, view and controller layers.
+- [`Demineur_2/`](Demineur_2/) – Alternate build of the Minesweeper engine packaged with compiled `.class` files.
+- [`CV_Website/`](CV_Website/) – Multi‑page CV website showcasing professional experience and projects.
+- [`Projet_Data/`](Projet_Data/) – Web dashboard mock-up for BI indicators, including interactive widgets powered by vanilla JS.
 
-### 🎮 Goal
-To develop a fully functional, browser-based version of the "Flood It" puzzle game, allowing users to customize grid size, color count, and play in a **Challenge Mode** with limited moves.
-
-### 💡 Key Skills & Features
-
-* **Recursive Flood Fill:** Used a recursive function (`remplir`) to implement the core game mechanic of propagating the selected color to adjacent cells of the same color.
-* **DOM Manipulation:** Dynamic generation of the game grid and color palette based on user configuration inputs.
-* **UI/UX:** Utilized **Bootstrap** for responsive layout and clean presentation, including a configuration page and an integrated tutorial.
-* **Game State Management:** Tracking the number of moves and checking the victory/loss condition in real-time.
+Each project directory includes its own source code, assets and—when relevant—compilation instructions or reports.
 
 ---
 
-## 📬 Let's Connect
+## 🔬 Systems & Algorithms Projects
 
-Currently actively seeking a **10-week minimum internship** in France (Lille preferred) or abroad between **April and August 2026**. I am eager to apply my skills in core development and technical analysis to a challenging industry role.
+### Dinic Maximum Flow Solver (`Projet_SD_Graphes/`)
 
-* 🔗 **www.linkedin.com/in/hani-nabil**
-* 📧 **nabil.hani@polytech-lille.net** | **nabil04hani@gmail.com**
-* 🏆 **Certifications:** C2 English Proficiency (CPE) and TOEIC (Score: 985/990).
+*Language: C*
+
+- Implements a reusable graph module (`graphe.h`, `sommet.h`, `arc.h`, `chemin.h`) supporting residual networks and adjacency lists with reverse-arc pointers.
+- Core algorithm lives in `Projet.c` and is built with the provided `Makefile`.
+- Sample datasets (`ReadMe.txt`) illustrate small and large flow networks to validate both correctness and performance.
+
+**How to run**
+```bash
+cd Projet_SD_Graphes
+make            # builds the executable with gcc
+a.out < input   # run the solver against a graph description
+```
+
+### Penté Strategy Game Toolkit (`Penté/`)
+
+*Language: C*
+
+- Contains command-line utilities (`pente` executable, `pente.c`) for evaluating game states and trying move sequences.
+- Bundled `.txt` files provide ready-to-use board configurations for testing heuristics.
+- Includes a full project report (`Algorithmique et Programmation - Rapport.pdf`) describing the search strategy and complexity analysis.
 
 ---
 
-## 📜 License
+## 🎮 Object-Oriented Games
 
-All code and documentation in this academic portfolio are licensed under the **MIT License**.
+### Minesweeper Engine & GUI (`Demineur/`)
 
-***
+*Language: Java*
+
+- Core gameplay lives in the `lib/` package with an abstract cell hierarchy (`AbstractCell`, `StandardCell`, `BombCell`) and the `Demineur` controller.
+- GUI classes in `gui/` (Swing) manage the setup dialog, grid rendering and user feedback.
+- Custom exceptions in `exceptions/` keep the engine decoupled from the interface and simplify error handling.
+
+**Compile & run**
+```bash
+cd Demineur
+javac exceptions/*.java gui/*.java lib/*.java
+java gui.DemineurUI
+```
+
+### Minesweeper Build with Binaries (`Demineur_2/`)
+
+*Language: Java*
+
+- Mirrors the structure of `Demineur/` and ships the compiled `.class` files for quick execution.
+- Useful for demonstrations without needing to recompile; edit the `.java` sources for custom behaviour and rebuild if required.
+
+---
+
+## 🌐 Web & Data Experiences
+
+### CV Website (`CV_Website/`)
+
+*Stack: HTML, CSS, JavaScript, Bootstrap*
+
+- Responsive multi-page personal site (`index.html`, `cv.html`, `loisirs.html`, `liens.html`).
+- Custom styles (`styles.css`) complemented by Bootstrap for layout and typography.
+- `scripts.js` adds interactive behaviours such as smooth scrolling and dynamic content toggles.
+
+### Data Storytelling Dashboard (`Projet_Data/`)
+
+*Stack: HTML, CSS, JavaScript*
+
+- Prototype of a BI dashboard presenting socio-economic indicators with interactive charts and gauges.
+- Pages (`index.html`, `analyse.html`, `indicateurs.html`) are styled by `style.css` and enhanced with `script.js` and `js-fluid-meter.js`.
+- CSV datasets in the folder supply real figures to drive visualisations.
+
+---
+
+## 📬 Contact & Licensing
+
+- **LinkedIn:** [linkedin.com/in/hani-nabil](https://www.linkedin.com/in/hani-nabil)
+- **Email:** nabil.hani@polytech-lille.net / nabil04hani@gmail.com
+
+All material in this repository is available under the [MIT License](LICENSE). Feel free to explore, reuse and adapt with attribution.
