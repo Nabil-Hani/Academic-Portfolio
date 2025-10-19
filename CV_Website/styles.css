@@ -1,22 +1,73 @@
-
-
+/* 🌌 Background + bubbles animation */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    color: #f8f9fa;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
 }
 
+/* Bubbles container */
+.bg-bubbles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
 
+.bg-bubbles span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    animation: rise 14s infinite ease-in;
+    bottom: -100px;
+}
+
+.bg-bubbles span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.bg-bubbles span:nth-child(2) { left: 25%; animation-delay: 3s; }
+.bg-bubbles span:nth-child(3) { left: 40%; animation-delay: 6s; }
+.bg-bubbles span:nth-child(4) { left: 55%; animation-delay: 1s; }
+.bg-bubbles span:nth-child(5) { left: 70%; animation-delay: 5s; }
+.bg-bubbles span:nth-child(6) { left: 85%; animation-delay: 2s; }
+.bg-bubbles span:nth-child(7) { left: 20%; animation-delay: 7s; }
+.bg-bubbles span:nth-child(8) { left: 60%; animation-delay: 4s; }
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-1200px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🎨 UI Styling */
 .navbar {
     background-color: #343a40 !important;
 }
-
 
 header {
     text-align: center;
     padding: 50px 0;
 }
-
 
 img.rounded-circle {
     width: 150px;
@@ -25,18 +76,19 @@ img.rounded-circle {
 }
 
 aside {
-    background-color: #e9ecef;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     margin-top: 20px;
+    color: #f8f9fa;
+    backdrop-filter: blur(4px);
 }
 
 .btn-primary {
     background-color: #007bff;
     border: none;
 }
-
 
 .btn-primary:hover {
     background-color: #0056b3;
@@ -47,12 +99,13 @@ aside {
 }
 
 a {
-    color: #007bff;
+    color: #66c2ff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #a3d8ff;
 }
 
 footer {
@@ -62,4 +115,3 @@ footer {
     padding: 15px 0;
     margin-top: 30px;
 }
-
