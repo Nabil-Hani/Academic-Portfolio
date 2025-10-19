@@ -1,4 +1,9 @@
 # 🎓 Nabil Hani – Engineering Academic Portfolio (Polytech Lille 2024‑2027)
+🌐 **View Locally:**  
+You can preview the portfolio site by downloading the files and opening [`index.html`](./CV_Website/index.html) in your browser.
+
+📁 [Browse the CV Website folder here](./CV_Website/)
+
 <div align="center">
 <img src="./assets/polytech2022.png" alt="Polytech Lille Logo" width="360" />
   <br/><br/>
