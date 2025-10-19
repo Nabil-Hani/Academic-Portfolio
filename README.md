@@ -1,7 +1,7 @@
 # 🎓 Nabil Hani – Engineering Academic Portfolio (Polytech Lille 2024‑2027)
 
 <div align="center">
-<img src="./assets/polytech2022.png" alt="Polytech Lille Logo" width="180" />
+<img src="./assets/polytech2022.png" alt="Polytech Lille Logo" width="360" />
   <br/><br/>
   <em>“From algorithmic proofs to interactive dashboards, this repository gathers the projects that shaped my engineering journey at Polytech Lille.”</em>
   <br/><br/>
