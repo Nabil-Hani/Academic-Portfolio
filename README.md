@@ -1,5 +1,4 @@
 # 🎓 Nabil Hani – Engineering Academic Portfolio (Polytech Lille 2024‑2027)
-🌐 **Live Portfolio Website:** [nabilhani.dev](https://nabilhani-portfolio.replit.app)
 <div align="center">
 <img src="./assets/polytech2022.png" alt="Polytech Lille Logo" width="360" />
   <br/><br/>
