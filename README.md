@@ -246,6 +246,7 @@ Responsive personal CV website with **Bootstrap** and light client-side scriptin
 ```bash
 cd CV_Website
 # open index.html in your browser (no server required)
+```
 
 ## 📬 Contact & License
 
