@@ -234,48 +234,18 @@ Bash
 - Dynamic grid generator builds the board and palette based on user-selected options.
 - Challenge mode imposes move limits and tracks performance for replay value.
 
-**Preview**
-Open `Web-Dev-Flood-It/index.html` directly in a browser, or serve the directory via a static server for local development.
+### Interactive CV Website (`CV_Website/`)
+Responsive personal CV website with **Bootstrap** and light client-side scripting.
 
-Chart.js widgets for skill visualisation.
+**Features**
+- Sections for education, projects, and skills with iconography.
+- **Chart.js** widgets for skill visualisation.
+- Mobile-first layout with smooth scrolling.
 
-Mobile-first layout with smooth scrolling.
-
-Preview locally
-
-Bash
-
+**Preview locally**
+```bash
 cd CV_Website
 # open index.html in your browser (no server required)
-BI/Data Dashboard Prototype (Projet_Data/)
-Data exploration dashboards (Plotly/JS) driven by CSV/JSON data.
-
-Features
-
-KPIs and cards, trend charts, and categorical breakdowns.
-
-Simple data cleaning & aggregation scripts.
-
-Fluid-meter/indicator visuals for at-a-glance status.
-
-Run
-
-Bash
-
-cd Projet_Data
-# open index.html (uses client-side Plotly)
-Flood It Web Game (Web-Dev-Flood-It/)
-A front-end implementation of the classic puzzle game, Flood It, using core web technologies.
-
-Highlights
-
-Recursive Flood Fill: Used a recursive function (remplir) to implement the core game mechanic of propagating the selected color to adjacent cells of the same color.
-
-DOM Manipulation: Dynamic generation of the game grid and color palette based on user configuration inputs.
-
-Game Modes: Includes a Challenge Mode with move limits.
-
-Preview locally
 
 ## 📬 Contact & License
 
