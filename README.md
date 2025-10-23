@@ -234,19 +234,6 @@ Bash
 - Dynamic grid generator builds the board and palette based on user-selected options.
 - Challenge mode imposes move limits and tracks performance for replay value.
 
-### Interactive CV Website (`CV_Website/`)
-Responsive personal CV website with **Bootstrap** and light client-side scripting.
-
-**Features**
-- Sections for education, projects, and skills with iconography.
-- **Chart.js** widgets for skill visualisation.
-- Mobile-first layout with smooth scrolling.
-
-**Preview locally**
-```bash
-cd CV_Website
-# open index.html in your browser (no server required)
-```
 
 ## 📬 Contact & License
 
